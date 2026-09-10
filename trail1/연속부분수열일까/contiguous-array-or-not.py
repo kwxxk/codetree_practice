@@ -1,0 +1,12 @@
+n1,n2 = map(int,input().split())
+arr_a = list(map(int,input().split()))
+arr_b = list(map(int,input().split()))
+idx = 0
+for i in range(n1):
+    if arr_a[i:i+n2] == arr_b:
+        idx = i
+        break
+if idx > 0:
+    print('Yes')
+else: print('No')
+    
